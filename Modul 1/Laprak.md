@@ -1,4 +1,4 @@
-# <h1 align="center">Laporan Praktikum Modul 2 - ... </h1>
+# <h1 align="center">Laporan Praktikum Modul 2 </h1>
 <p align="center">[Hanan Fahri Abiyyu] - [109082500131]</p>
 
 ## Unguided
