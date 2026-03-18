@@ -1,9 +1,9 @@
-# <h1 align="center">Laporan Praktikum Modul 3 </h1>
+# <h1 align="center">Laporan Praktikum Modul 2 </h1>
 <p align="center">[Hanan Fahri Abiyyu] - [109082500131]</p>
 
 ## Unguided
 
-### 1. [Soal Latihan Modul 3]
+### 1. [Soal Latihan Modul 2A]
 #### soal1.go
 
 ```go
@@ -11,37 +11,24 @@ package main
 
 import "fmt"
 
-func faktorial(n int) int {
-	var hasil int = 1
-	var i int
-	for i = 1; i <= n; i++ {
-		hasil = hasil * i
-	}
-	return hasil
-}
-
-func permutasi(n, r int) int {
-	return faktorial(n) / faktorial(n-r)
-}
-
-func kombinasi(n, r int) int {
-	return faktorial(n) / (faktorial(r) * faktorial(n-r))
-}
-
 func main() {
-	var a, b, c, d int
-	fmt.Scan(&a, &b, &c, &d)
-	if a >= c {
-		fmt.Print(permutasi(a, c), " ")
-		fmt.Println(kombinasi(a, c))
-	}
-
-	if b >= d {
-		fmt.Print(permutasi(b, d), " ")
-		fmt.Println(kombinasi(b, d))
-	}
+	var (
+		satu, dua, tiga string
+		temp            string
+	)
+	fmt.Print("Masukan input string: ")
+	fmt.Scanln(&satu)
+	fmt.Print("Masukan input string: ")
+	fmt.Scanln(&dua)
+	fmt.Print("Masukan input string: ")
+	fmt.Scanln(&tiga)
+	fmt.Println("Output awal = " + satu + " " + dua + " " + tiga)
+	temp = satu
+	satu = dua
+	dua = tiga
+	tiga = temp
+	fmt.Println("Output akhir = " + satu + " " + dua + " " + tiga)
 }
-
 ```
 
 ### 2. [Soal Latihan Modul 2B]
@@ -52,26 +39,23 @@ package main
 
 import "fmt"
 
-func f(x int) int {
-	pangkat := x * x
-	return pangkat
-}
-
-func g(x int) int {
-	fungxie := x - 2
-	return fungxie
-}
-
-func h(x int) int {
-	function := x + 1
-	return function
-}
 func main() {
-	var a, b, c int
-	fmt.Scan(&a, &b, &c)
-	fmt.Println(f(g(h(a))))
-	fmt.Println(g(h(f(b))))
-	fmt.Println(h(f(g(c))))
+	var (
+		warna1, warna2, warna3, warna4 string
+		temp bool
+	)
+	fmt.Println("Urutkan warna sesuai rules")
+	temp = true
+	i := 1
+	for i <= 5{
+		fmt.Print("Percobaan ", i)
+		fmt.Scan(&warna1, &warna2, &warna3, &warna4)
+		if warna1 != "merah" || warna2 != "kuning" || warna3 != "hijau" || warna4 != "ungu"{
+			temp = false
+		}
+		i++ 
+	}
+	fmt.Println("Berhasil :", temp)
 }
 ```
 
@@ -81,43 +65,33 @@ func main() {
 ```go
 package main
 
-import (
-	"fmt"
-	"math"
-)
+import "fmt"
 
-func jarak(a, b, c, d float64) float64 {
-	return math.Sqrt((a-c)*(a-c) + (b-d)*(b-d))
-}
-
-func didalam(cx, cy, r, x, y float64) bool {
-	return jarak(cx, cy, x, y) <= r
-}
 func main() {
-	var (
-		cx1, cy1, r1 int
-		cx2, cy2, r2 int
-		x, y         int
-	)
-	fmt.Scan(&cx1, &cy1, &r1)
-	fmt.Scan(&cx2, &cy2, &r2)
-	fmt.Scan(&x, &y)
-
-	titik1 := didalam(float64(cx1), float64(cy1), float64(r1), float64(x), float64(y))
-	titik2 := didalam(float64(cx2), float64(cy2), float64(r2), float64(x), float64(y))
-
-
-	if titik1 && titik2{
-		fmt.Println("Titik di dalam lingkaran 1 dan 2")
-	}else if titik1{
-		fmt.Println("Titik di dalam lingkaran 1")
-	}else if titik2{
-		fmt.Println("Titik di dalam lingkaran 2")
-	}else{
-		fmt.Println("Titik di luar lingkaran 1 dan 2")
+	var  g, kg, tambahan int
+	fmt.Print("Berat parsel (gram) :")
+	fmt.Scan(&g)
+	kg = g/1000
+	gr := g % 1000
+	fmt.Println("Detail berat :", kg, "kg +", gr, "gr")
+	kg2 := kg * 10000
+	if gr >= 500 && kg <= 10 {
+		tambahan = (gr * 5)
+		fmt.Println("Detail biaya :", "Rp.", kg2, "+ Rp.", tambahan)
+		total := tambahan + kg2
+		fmt.Println("Total biaya :", total)
+	}else if gr < 500 && kg <= 10 {
+		tambahan = (gr * 15)
+		fmt.Println("Detail biaya :", "Rp.", kg2, "+ Rp.", tambahan)
+		kg2 = tambahan + kg2
+		fmt.Print("Total biaya :", kg2)
+	}else if kg > 10{
+		tambahan = (gr * 5)
+		fmt.Println("Detail biaya : ", "Rp.", kg2, "+", "Rp.", tambahan)
+		fmt.Println("Total biaya :", kg2)
 	}
+	
 }
-
 ```
 ### Output Unguided :
 
