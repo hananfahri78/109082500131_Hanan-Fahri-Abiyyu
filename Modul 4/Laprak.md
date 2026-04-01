@@ -135,15 +135,41 @@ func cetakDeret(n int) {
 
 ##### Soal 1
 
-![Screenshoot Output Soal 1](https://github.com/hananfahri78/109082500131_Hanan-Fahri-Abiyyu/blob/main/Modul%203/Output/Output1.png)
-Membuat program untuk membantu Jonas dalam pengimplementasian tugas mata kuliah Matematika Diskrit mengenai kombinasi dan permutasi, ke dalam suatu program. Input terdiri dari 4 variabel bilangan asli a, b, c, d dengan syarat a >= c dan b >= d. Output berupa dua baris yang menyatakan hasil permutasi dan kombinasi a terhadap c, dan hasil permutasi dan kombinasi b terhadap d. Terdapat tiga function tambahan, digunakan untuk penghitungan faktorial, permutasi, dan kombinasi. Pada faktorial digunakan inisiasi variabel i, serta variabel hasil, dengan nilai 1. Untuk menghitungnya, digunakan perulangan dengan syarat selama i <= n, maka i akan bertambah 1. Permutasi memanggil function faktorial dengan cara, return faktorial(n) / faktorial(r) sesuai rumus. Begitu juga kombinasi, akan memanggil function faktorial dengan return, dan disesuaikan rumus kombinasi. Pada function utama, terdapat percabangan, percabangan pertama dimana jika a>= c maka akan mengeluarkan output hasil dari permutasi dan kombinasi a, c. Percabangan kedua, jika b >= d maka mengeluarkan hasil permutasi dan kombinasi b, d. 
+![Screenshoot Output Soal 1](https://github.com/hananfahri78/109082500131_Hanan-Fahri-Abiyyu/blob/main/Modul%204/Output/Output1.png)
+Membuat program untuk membantu Jonas dalam pengimplementasian tugas mata kuliah Matematika Diskrit mengenai kombinasi dan permutasi, ke dalam suatu program. 
+
+Input terdiri dari 4 variabel bilangan asli a, b, c, d dengan syarat a >= c dan b >= d. Output berupa dua baris yang menyatakan hasil permutasi dan kombinasi a terhadap c, dan hasil permutasi dan kombinasi b terhadap d.
+
+Terdapat tiga prosedur tambahan yang dideklarasikan sebagai func, digunakan untuk penghitungan faktorial, permutasi, dan kombinasi. Pada faktorial digunakan inisiasi variabel i, dan variabel hasil yang dikirim melalui pointer, dengan nilai awal 1. Untuk menghitungnya, digunakan perulangan dengan syarat selama i <= n, maka i akan bertambah 1. 
+
+Permutasi dan kombinasi memanfaatkan parameter hasil berupa pointer. Permutasi menghitung nilai menggunakan rumus n! / (n-r)! dengan memanggil prosedur faktorial untuk memperoleh nilai faktorial yang dibutuhkan.
+
+Kombinasi menghitung nilai menggunakan rumus n! / r! (n-r)! dengan cara yang sama, yaitu memanggil prosedur faktorial untuk setiap komponen perhitungan.
+
+Pada fungsi utama (main), terdapat percabangan. Jika a>= c, maka program akan memanggil prosedur permutasi dan kombinasi untuk menghitung nilai a terhadap c, kemudian menampilkan output hasil. Percabangan kedua, jika b >= d, maka program akan melakukan hal yang sama untuk b terhadap d, kemudian menampilkan output hasil.
 
 ##### Soal 2
 
-![Screenshoot Output Soal 2](https://github.com/hananfahri78/109082500131_Hanan-Fahri-Abiyyu/blob/main/Modul%203/Output/Output2.png)
-Menghitung fungsi komposisi. Diberikn tiga buah fungsi matematika f, g, h. Ketiganya dibuatkan function tambahan dan akan digabungkan masing-masing sesuai pada soal. Yaitu output pertama (fogoh)(a), kedua (gohof)(b), ketiga (hofog)(c). function f(x) = x^2, function g(x) = x - 2, function h(x) = x + 1. Selanjutnya masuk ke function utama, terdapat tiga buah variabel bilangan bulat(integer) a, b, c, input dari masing-masing variabel tersebut akan dimasukkan kedalam fungsi komposisi di atas. Output akan menghasilkan fungsi komposisi dari (fogoh)(a), (gohof)(b), dan (hofog)(c).  
+![Screenshoot Output Soal 2](https://github.com/hananfahri78/109082500131_Hanan-Fahri-Abiyyu/blob/main/Modul%204/Output/Output2.png)
+Membuat program menentukan pemenang dalam suatu kompetisi pemrograman. Setiap peserta diberikan 8 soal yang harus diselesaikan dalam waktu 5 jam. Penentuan pemenang dilakukan berdasarkan jumlah soal yang berhasil diselesaikan terbanyak. Jika terdapat peserta dengan jumlah soal selesai yang sama, pemenang akan ditentukan dari total waktu pengerjaan yang paling kecil.
+
+Input terdiri dari beberapa data peserta. Setiap baris input diawali dengan nama peserta, diikuti oleh 8 bilangan bulat (integer) yang menyatakan waktu (dalam menit) yang dibutuhkan untuk menyelesaikan masing-masing soal. Jika suatu soal tidak berhasil diselesaikan, maka otomatis dianggap menyelesaikan dalam waktu 5 jam 1 menit (301 menit).
+
+Program dibuat secara modular dengan menggunakan prosedur hitungSkor untuk menghitung jumlah soal dan total waktu yang memiliki parameter formal berupa jumlah soal yang diselesaikan dan total waktu pengerjaan. Prosedur tersebut bertugas membaca waktu pengerjaan untuk 8 soal, kemudian menghitung berapa banyak soal yang berhasil diselesaikan (waktu yang kurang dari 301 menit) serta menjumlahkan total waktu dari soal-soal tersebut.
+
+Pada fungsi utama (main), program membaca nama peserta, kemudian memanggil prosedur hitungSkor untuk memperoleh jumlah soal dan total waktu dari masing-masing peserta. Selanjutnya dilakukan perbandingan untuk menentukan pemenang, yaitu peserta dengan jumlah soal terbanyak atau, jika sama, dengan total waktu paling kecil.
+
+Output program berupa satu baris yang menampilkan nama pemenang, jumlah soal diselesaikan, serta total waktu yang dibutuhkan.
 
 ##### Soal 3
 
-![Screenshoot Output Soal 3](https://github.com/hananfahri78/109082500131_Hanan-Fahri-Abiyyu/blob/main/Modul%203/Output/Output3.png)
-Menentukan posisi titik apakah di dalam atau di luar lingkaran. Suatu lingkaran didefinisikan dengan koordinat titik pusat (cx, cy) dan radius r. Diberikan dua buah lingkaran dan menentukan posisi titik sembarang menggunakan variabel (x, y) berdasarkan dua lingkaran tersebut. Terdapat dua function tambahan, jarak dan didalam. Jarak untuk menambahkan rumus mencari jarak, dengan menggunakan math.Sqrt untuk menghitung akar kuadrat. Di dalamnya terdapat variabel (a, b, c, d float64) -> float64, serta mengembalikan jarak antara titk (a,b) dan (c,d). Function didalam  terdapat variabel (cx,cy,r,x,y float64) -> bool, serta mengembalikan nilai true apabila titik (x,y) berada did alam lingkaran yang memiliki titik pusat (cx,cy) dan radius r. Pada function utama, kita menginputkan nilai cx baris 1 2, cy baris 1 2, r baris 1 2, x, dan y. Selanjutnya, ada variabel tambahan yaitu titik 1 dan titik 2 digunakan untuk menggantikan tiap variabel input dengan tipe data awal integer, menjadi float64, serta digunakan sebagai variabel yang dimasukkan dalam percabangan, untuk menentukan posisi titik. Output akan mengeluarkan berupa string "Titik di dalam lingkaran 1 dan 2", "Titik di dalam lingkaran 1", atau "Titik di luar lingkaran 1 dan 2" cara pemisahan tersebut menggunakan percabangan if else. 
+![Screenshoot Output Soal 3](https://github.com/hananfahri78/109082500131_Hanan-Fahri-Abiyyu/blob/main/Modul%204/Output/Output3.png)
+Menghitung suatu deret bilangan dan mengimplementasikannya ke dalam suatu program, menggunakan bahasa pemrograman GO.
+
+Input berupa satu variabel bilangan asli yang dideklarasikan dengan n. Terdapat aturan perhitungan suku selanjutnya, jika n saat itu bilangan genap, maka suku berikutnya adalah n/2. Namun, jika ganjil maka suku berikutnya bernilai 3*n + 1. Rumus yang sama digunakan terus menerus untuk mencari suku berikutnya, hingga berakhir ketika suku terakhir bernilai 1. 
+
+Menggunakan prosedur cetakDeret dideklarasikan sebagai func. Di dalamnya terdapat perulangan yang digunakan untuk mencetak setiap suku deret. Perulangan akan terus berjalan hingga nilai n sama dengan 1 sebagai kondisi berhenti.
+
+Pada setiap iterasi dilakukan percabangan sesuai syarat ganjil atau genap, untuk menghasilkan suku berikutnya, dan setiap nilai n yang dihasilkan akan dicetak sebagai bagian dari deret.
+
+Selanjutnya pada bagian fungsi utama (main), terdapat variabel n bertipe data integer. Variabel tersebut digunakan sebagai input bilangan, kemudian program akan memanggil prosedur cetakDeret untuk mencetak hasil dari input variabel n.
