@@ -17,5 +17,5 @@ func bintang(n int) string {
 func main() {
 	var n int
 	fmt.Scan(&n)
-	fmt.Println(bintang(n))
+	fmt.Print(bintang(n))
 }
