@@ -187,13 +187,22 @@ Bagian main fungsi (utama) ditambahkan variabel bil dengan tipe data integer, me
 ![Screenshoot Output Soal 4](https://github.com/hananfahri78/109082500131_Hanan-Fahri-Abiyyu/blob/main/Modul%205/Output/Output_soal4.png)
 Membuat program dengan menggunakan rekursif untuk menampilkan barisan bilangan terurut mengecil ke 1 dan membesar kembali ke angka input. Base case terjadi saat n = 1, di mana program mencetak angka 1 dan berhenti. Jika belum mencapai base case, program akan mencetak nilai n, kemudian memanggil fungsi dengan n-1 sehingga terbentuk urutan menurun. Setelah itu, saat proses kembali, nilai n dicetak lagi sehingga terbentuk urutan membesar.
 
-Pada function main (utama), program menerima input integer dan memanggil fungsi rekursif untuk menampilkan hasil.
+Pada function main (utama), program menerima input integer dan memanggil prosedur secara rekursif untuk menampilkan hasil.
 
 
 ##### Soal 5
 
 ![Screenshoot Output Soal 5](https://github.com/hananfahri78/109082500131_Hanan-Fahri-Abiyyu/blob/main/Modul%205/Output/Output_soal5.png)
+Membuat program mencetak bilangan ganjil dari input bilangan bulat positif. Membuat prosedur rekursif yang digunakan sebagai penyimpanan nilai variabel dari input pengguna. 
 
+Pada function ganjil terdapat dua variabel bertipe data integer, x dan i. Dengan x digunakan untuk tempat dari nilai yang dimasukkan dan i berfungsi untuk perulangan angka ganjil. Nilai awal i adalah 1, kemudian akan bertambah 2 setiap pemanggilan rekursif sehingga menghasilkan deret bilangan ganjil.
+
+Main fungsi (utama) digunakan untuk membuat pengguna dapat memasukan angka bilangan bulat dan memanggil subprogram rekursif untuk menampilkan hasil.
 ##### Soal 6
 
 ![Screenshoot Output Soal 6](https://github.com/hananfahri78/109082500131_Hanan-Fahri-Abiyyu/blob/main/Modul%205/Output/Output_soal6.png)
+Membuat sebuah program untuk menghitung hasil perpangkatan dari dua bilangan, yaitu x dan y, menggunakan rekursif. Variabel x sebagai bilangan dasar dan y sebagai pangkat.
+
+Pada bagian func pangkat, nilai y digunakan sebagai pengontrol rekursi. Artinya jika y = 0, fungsi akan mengembalikan nilai 1 sebagai kondisi berhenti. Jika belum, maka fungsi akan mengalikan x dengan hasil dari pemanggilan fungsi pangkat(x, y-1). Proses akan terus berulang hingga nilai y mencapai 0, sehingga hasil perpangkatan dapat diperoleh secara bertahap.
+
+Selanjutnya bagian main fungsi, program menerima dua input bilangan bulat dari pengguna, kemudian memanggil fungsi rekursif untuk menghitung dan menampilkan hasil perpangkatan.
