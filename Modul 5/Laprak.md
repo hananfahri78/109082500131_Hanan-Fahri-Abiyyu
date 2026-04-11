@@ -171,17 +171,24 @@ Membuat sebuah program menghitung deret Fibonacci, yang definisinya adalah sebua
 ##### Soal 2
 
 ![Screenshoot Output Soal 2](https://github.com/hananfahri78/109082500131_Hanan-Fahri-Abiyyu/blob/main/Modul%205/Output/Output_soal2.png)
-Pada program nomor 2, diperintahkan membuat program mencetak pola bintang segitiga siku-siku sesuai dari input user. Menggunakan fungsi rekursif untuk tempat penghitungan dan pembentukan pola bintang, yang kemudian akan dipanggil ke func main untuk pengeksekusian yang akan menghasilkan output. Pada program ini digunakannya sebuah perulangan dan percabangan, perulangan berfungsi sebagai pencetakan bintang sebanyak N kali, percabangan digunakan untuk mengecek apakah nilai sama dengan 0 atau bukan, jika bukan lanjut ke perulangan kedua dan seterusnya sampai 0. Pada fungsi bintang, perhitungan pola digunakan dengan cara menghitung dari nilai awal/input, masuk ke variabel n sebagai isian nilai di function bintang. Selanjutnya akan dihitung dari besar ke kecil (turun), program terus mengulang sampai nilai n = 0, kemudian dibalik urutannya menjadi kecil ke besar(naik) dengan menggunakan bintang(x-1) sebelum for. Namun, saat n bernilai 0 tetap akan mencetak satu baris kosong sebelum berhentinya program.
+Pada program nomor 2, diperintahkan membuat program mencetak pola bintang segitiga siku-siku sesuai dari input user. Menggunakan fungsi rekursif untuk tempat penghitungan dan pembentukan pola bintang, yang kemudian akan dipanggil ke func main untuk pengeksekusian yang akan menghasilkan output. Pada program ini digunakannya sebuah perulangan dan percabangan, perulangan berfungsi sebagai pencetakan bintang sebanyak N kali, percabangan digunakan untuk mengecek apakah nilai sama dengan 0 atau bukan, jika kondisi tersebut belum terpenuhi, maka fungsi akan terus memanggil dirinya sendiri dengan nilai n-1 hingga mencapai base case. Pada fungsi bintang, perhitungan pola digunakan dengan cara menghitung dari nilai awal/input, masuk ke variabel n sebagai isian nilai di function bintang. Selanjutnya akan dihitung dari besar ke kecil (turun), program terus mengulang sampai nilai n = 0, kemudian dibalik urutannya menjadi kecil ke besar(naik) dengan menggunakan bintang(x-1) sebelum for.
 
-Pada bagian func main, input variabel dengan tipe data integer, serta mencetak hasil segitiga dengan memanggil fungsi bintang di dalam fmt.Println/percetakan.
+Pada bagian func main, program menerima input berupa bilangan integer dari pengguna, kemudian memanggil fungsi bintang untuk mencetak pola sesuai dengan nilai yang diberikan.
 
 ##### Soal 3
 
 ![Screenshoot Output Soal 3](https://github.com/hananfahri78/109082500131_Hanan-Fahri-Abiyyu/blob/main/Modul%205/Output/Output_soal3.png)
-Menampilkan faktor bilangan dari suatu N, atau bilangan yang apa saja yang habis membagi N. Untuk program ini bentuk pengimplementasian dari rekursif berupa prosedur rekursif. 
+Menampilkan faktor bilangan dari suatu N, atau bilangan yang apa saja yang habis membagi N. Untuk program ini bentuk pengimplementasian dari rekursif berupa prosedur rekursif. Seperti func faktor, diperlukannya dua variabel yaitu x dan i berfungsi untuk mencari angka dari 1 sampai ke N yang merupakan faktor dari bilangan N. Variabel x digunakan untuk menyimpan nilai dari input yang dilakukan user. percabangan i > x digunakan sebagai kondisi berhenti, yang dimana jika nilai i lebih besar dari x, maka program berhenti mencari. 
+
+Bagian main fungsi (utama) ditambahkan variabel bil dengan tipe data integer, menginput, memasukkan ke dalam func faktor, kemudian akan dieksekusi di dalam func faktor.
+
 ##### Soal 4
 
 ![Screenshoot Output Soal 4](https://github.com/hananfahri78/109082500131_Hanan-Fahri-Abiyyu/blob/main/Modul%205/Output/Output_soal4.png)
+Membuat program dengan menggunakan rekursif untuk menampilkan barisan bilangan terurut mengecil ke 1 dan membesar kembali ke angka input. Base case terjadi saat n = 1, di mana program mencetak angka 1 dan berhenti. Jika belum mencapai base case, program akan mencetak nilai n, kemudian memanggil fungsi dengan n-1 sehingga terbentuk urutan menurun. Setelah itu, saat proses kembali, nilai n dicetak lagi sehingga terbentuk urutan membesar.
+
+Pada function main (utama), program menerima input integer dan memanggil fungsi rekursif untuk menampilkan hasil.
+
 
 ##### Soal 5
 
