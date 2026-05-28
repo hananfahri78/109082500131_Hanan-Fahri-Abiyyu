@@ -151,16 +151,35 @@ func main() {
 
 ##### Soal 1
 
-![Screenshoot Output Soal 1](https://github.com/hananfahri78/109082500131_Hanan-Fahri-Abiyyu/blob/main/Modul%201/Output/output_soal1.png)
-Program tersebut berfungsi untuk menerima tiga iput/masukkan dengan masing-masing variabel bertipe data string, yaitu satu, dua, dan tiga. Setelah semua input masuk, program menampilkan urutan awal dari ketiga string tersebut. Selanjutnya program akan melakukan proses pertukaran posisi nilai menggunakan variabel temp, yaitu menyimpan nilai satu ke temp, memindahkan nilai dua ke satu, tiga ke dua, dan nilai yang ada pada temp ke tiga. Proses tersebut membuat urutan data bergeser dari posisi awal. Terakhir, program menampilkan urutan yang menunujkkan posisi ketiga string telah berubah dari urutan awal.
+![Screenshoot Output Soal 1](https://github.com/hananfahri78/109082500131_Hanan-Fahri-Abiyyu/blob/main/Modul%2010/Output/Output_soal1.png)
+Program tersebut berfungsi untuk mendata berat anak kelinci yang akan dijual ke pasar. Program menggunakan array berkapasitas 1000 untuk menampung data berat anak kelinci yang akan dijual.
+
+Masukan terdiri dari sekumpulan bilangan, bilangan pertama adalah variabel bilangan bulat "jumlahKelinci" yang digunakan untuk menyatakan banyaknya anak kelinci yang akan ditimbang beratnya, atau untuk sebagai batas banyaknya array yang akan diisikan. Selanjutnya variabel "berat_kelinci" dengan tipe data array float64, yang disimpan di dalam sebuah array, digunakan untuk menyatakan berat dari anak kelinci yang akan dijual. Serta variabel "idxMin" dan "idxMax", yang digunakan untuk mencari nilai maksimum dan minimum dari data berat anak kelinci.
+
+Keluaran berupa dua bilangan real yang menyatakan berat kelinci terkecil dan terbesar.
+
+
 
 ##### Soal 2
 
-![Screenshoot Output Soal 2](https://github.com/hananfahri78/109082500131_Hanan-Fahri-Abiyyu/blob/main/Modul%201/Output/output_soal2.png)
-Membuat program tentang SMA IPA melakukan praktikum kimia di Laboratorium sekolah. Setiap percobaan menggunakan 4 tabung reaksi, dimana susunan warna cairan memengaruhi hasil percobaan. Program dibuat untuk menguji hasil percobaan, siswa diminta menginputkan hasil dari 4 gelas dengan 4 warna berbeda sebanyak 5 kali percobaan. Program akan menampilkan hasil dari eksperimen, jika input warna sesuai urutan yaitu "merah, kuning hijau ungu" selama 5 kali percobaan, maka output atau hasil akan menampilkan true. Jika terdapat satu baris atau satu warna saja tidak sesuai urutan, output akan menampilkan false.
+![Screenshoot Output Soal 2](https://github.com/hananfahri78/109082500131_Hanan-Fahri-Abiyyu/blob/main/Modul%2010/Output/Output_soal2.png)
+Program tersebut berfungsi untuk menentukan total berat ikan pada setiap wadah serta menghitung rata-rata berat ikan di tiap wadah. Program menggunakan array berkapasitas 1000 untuk menampung data berat ikan yang akan dijual.
+
+Masukan terdiri dari dua bilangan bulat yaitu variabel x dan y. Variabel x digunakan untuk menyatakan banyaknya ikan yang akan dijual atau banyaknya data yang akan diinputkan ke dalam array. Sedangkan variabel y digunakan untuk menyatakan kapasitas jumlah ikan di setiap wadah. Selanjutnya variabel ikan dengan tipe data float64/real, yang disimpan di dalam sebuah array, digunakan untuk menyimpan berat masing-masing ikan yang akan dijual.
+
+Program juga menggunakan variabel "totalPerWadah" bertipe array float64 untuk menyimpan total berat ikan pada setiap wadah. Variabel idxWadah digunakan untuk menentukan indeks wadah yang sedang diisi. Kemudian variabel jmlWadah digunakan untuk menghitung jumlah wadah yang dipakai berdasarkan nilai x dan y. Selain itu, variabel total digunakan untuk menjumlahkan seluruh total berat ikan dari setiap wadah, sedangkan variabel rata2 digunakan untuk menghitung rata-rata berat ikan di tiap wadah.
+
+Keluaran terdiri dari dua baris. Baris pertama berupa kumpulan bilangan real yang menyatakan total berat ikan pada setiap wadah sesuai urutan pengisian. Baris kedua berupa sebuah bilangan real yang menyatakan rata-rata berat ikan di tiap wadah.
 
 ##### Soal 3
 
-![Screenshoot Output Soal 3](https://github.com/hananfahri78/109082500131_Hanan-Fahri-Abiyyu/blob/main/Modul%201/Output/output_soal3.png)
-Membuat program aplikasi perhitungan biaya kirim berdasarkan berat parsel. Dengan satuan awal berupa gram, kemudian akan diambil digit awalan ke dalam bentuk kilogram (kg) dengan cara membagi dengan 1000 dan sisanya sebagai gram dengan cara dimodulus 1000. Selanjutnya akan dicek ke dalam if dengan kondisi awal nilai gram >= 500 dan kg <= 10, jika memenuhi kondisi pertama, maka akan langsung mencetak output dari if tersebut. Selanjutnya terdapat else if pertama dengan kondisi 
-gram sebaliknya, yaitu gram < 500 dan kg <= 10. Yang terakhir terdapat else if lagi dengan kondisi kebalikan dari kg awal, yaitu kg > 10, ini kondisi dimana kg lebih dari 10. Saat kondisi ini, walaupun gram lebih atau kurang dari 500, dia tidak akan dikenakan biaya, karena jika kita inputkan angka yang lebih dari 10 kg, maka akan digratiskan biaya sisa beratnya. Seperti pada contoh ketiga, walaupun terdapat sisa berat yaitu 750 gr, tapi karena berat kg nya adalah 11 yang berarti lebih dari 10 kg, biaya hanya terhitung yang 11 kg saja.
+![Screenshoot Output Soal 3](https://github.com/hananfahri78/109082500131_Hanan-Fahri-Abiyyu/blob/main/Modul%2010/Output/Output_soal3.png)
+Membuat program pencatatan data berat balita yang dilakukan oleh Pos Pelayanan Terpadu (posyandu). Petugas posyandu akan memasukkan data balita ke dalam array, dari data yang diperoleh akan dicari berat balita terkecil, terbesar, dan rerata nya.
+
+Array ditentukan berkapasitas 100.
+
+Terdapat dua function tambahan, yaitu hitungMinMax yang berfungsi untuk mencari nilai minimum dan nilai maksimum, serta function rerata yang digunakan untuk menghitung rata-rata dari jumlah berat balita dibagi banyaknya data balita.
+
+Masukan pertama berupa banyaknya balita yang akan didata. Variabel "dataBalita" bertipe data integer dan dijadikan sebagai variabel global (di luar function), sehingga dapat digunakan di semua function tanpa pemanggilan parameter tambahan. Selanjutnya variabel "beratBalita" bertipe data array float64, digunakan untuk menyatakan berat dari banyaknya balita. Serta "rataRata" dengan tipe data float64, digunakan sebagai tempat penyimpanan nilai yang diambil dari function rerata.
+
+Keluaran berupa bilangan desimal dari penentuan berat balita minimum (data terkecil), berat balita maksimum (data terbesar), dan rerata berat balita.
