@@ -377,7 +377,7 @@ func main() {
 ##### Selection Sort
 ##### Soal 1
 
-![Screenshoot Output Soal 1](https://github.com/hananfahri78/109082500131_Hanan-Fahri-Abiyyu/blob/main/Modul%205/Output/Output_soal1.png)
+![Screenshoot Output Soal 1](https://github.com/hananfahri78/109082500131_Hanan-Fahri-Abiyyu/blob/main/Modul%2014/Selection%20Sort/Output%20Soal/Output-soal1.png)
 Program rumahKerabat digunakan untuk membantu Hercules dalam mengurutkan data nomor rumah kerabat nya pada beberapa daerah menggunakan metode Selection Sort.
 
 Masukan diawali dengan sebuah bilangan bulat n yang menyatakan banyaknya daerah yang akan diproses. Untuk setiap daerah, pengguna memasukkan sebuah bilangan bulat m yang menyatakan banyaknya rumah pada daerah tersebut, kemudian diikuti oleh m buah bilangan bulat yang merepresentasikan nomor rumah pada daerah tersebut.
@@ -388,7 +388,7 @@ Keluaran berupa beberapa baris data. Setiap baris menampilkan nomor rumah yang t
 
 ##### Soal 2
 
-![Screenshoot Output Soal 2](https://github.com/hananfahri78/109082500131_Hanan-Fahri-Abiyyu/blob/main/Modul%205/Output/Output_soal2.png)
+![Screenshoot Output Soal 2](https://github.com/hananfahri78/109082500131_Hanan-Fahri-Abiyyu/blob/main/Modul%2014/Selection%20Sort/Output%20Soal/Output-soal2.png)
 Program ini digunakan untuk mengolah data nomor rumah pada beberapa daerah berdasarkan sifat bilangan ganjil dan genap. Pengguna terlebih dahulu memasukkan jumlah daerah yang akan diproses. Untuk setiap daerah, pengguna memasukkan banyaknya rumah beserta nomor rumah yang ada pada daerah tersebut.
 
 Setelah seluruh data rumah dibaca, program akan memisahkan nomor rumah ke dalam dua kelompok, yaitu kelompok bilangan ganjil dan kelompok bilangan genap. Bilangan ganjil kemudian diurutkan secara menaik (dari kecil ke besar) menggunakan prosedur selectionSortAsc, sedangkan bilangan genap diurutkan secara menurun (dari besar ke kecil) menggunakan prosedur selectionSortDesc.
@@ -400,7 +400,7 @@ Keluaran program berupa daftar nomor rumah yang telah diurutkan dengan ketentuan
 ##### Insertion Sort
 ##### Soal 1
 
-![Screenshoot Output Soal 3](https://github.com/hananfahri78/109082500131_Hanan-Fahri-Abiyyu/blob/main/Modul%205/Output/Output_soal3.png)
+![Screenshoot Output Soal 3](https://github.com/hananfahri78/109082500131_Hanan-Fahri-Abiyyu/blob/main/Modul%2014/Insertion%20Sort/Output/Output_soal1.png)
 Membuat program mengurutkan sekumpulan bilangan yang dimasukkan oleh pengguna, kemudian memeriksa apakah data tersebut memiliki jarak yang tetap antar nilainya. Pengguna dapat memasukkan beberapa bilangan bulat positif atau nol secara berurutan. Proses masukan akan berhenti ketika pengguna memasukkan bilangan negatif.
 
 Dalam program terdapat prosedur InsertionSort yang digunakan untuk mengurutkan seluruh data secara menaik (ascending) menggunakan metode Insertion Sort. Metode ini bekerja dengan mengambil satu elemen, kemudian menyisipkannya ke posisi yang sesuai pada bagian data yang telah terurut sebelumnya hingga seluruh data berada dalam urutan yang benar.
@@ -411,7 +411,7 @@ Keluaran program berupa satu baris data yang telah terurut dari kecil ke besar, 
 
 ##### Soal 2
 
-![Screenshoot Output Soal 4](https://github.com/hananfahri78/109082500131_Hanan-Fahri-Abiyyu/blob/main/Modul%205/Output/Output_soal4.png)
+![Screenshoot Output Soal 4](https://github.com/hananfahri78/109082500131_Hanan-Fahri-Abiyyu/blob/main/Modul%2014/Insertion%20Sort/Output/Output_soal2.png)
 Program ini digunakan untuk mengelola data buku dalam sebuah pustaka berdasarkan rating yang dimiliki setiap buku. Pengguna terlebih dahulu memasukkan jumlah buku yang akan didata, kemudian memasukkan informasi setiap buku yang terdiri atas ID, judul, penulis, penerbit, jumlah eksemplar, tahun terbit, dan rating, yang disimpan di dalam struct Buku. Setelah seluruh data buku dimasukkan, pengguna juga memasukkan sebuah rating yang akan digunakan sebagai kunci pencarian.
 
 Dalam program terdapat beberapa prosedur pendukung. Prosedur DaftarkanBuku digunakan untuk menyimpan seluruh data buku yang dimasukkan pengguna ke dalam array. Prosedur CetakTerfavorit digunakan untuk mencari dan menampilkan buku dengan rating tertinggi. Selanjutnya, prosedur UrutBuku mengurutkan seluruh data buku berdasarkan rating secara menurun menggunakan metode Insertion Sort, sehingga buku dengan rating tertinggi berada di posisi awal.
@@ -423,7 +423,7 @@ Keluaran program terdiri atas beberapa bagian, yaitu data buku terfavorit, lima 
 
 ##### Soal 3
 
-![Screenshoot Output Soal 5](https://github.com/hananfahri78/109082500131_Hanan-Fahri-Abiyyu/blob/main/Modul%205/Output/Output_soal5.png)
+![Screenshoot Output Soal 5](https://github.com/hananfahri78/109082500131_Hanan-Fahri-Abiyyu/blob/main/Modul%2014/Insertion%20Sort/Output/Output_soal3.png)
 Program ini dibuat berdasarkan sebuah permasalahan yang muncul pada kompetisi pemrograman yang diikuti oleh berbagai tim dari perguruan tinggi. Meskipun problem yang diberikan terlihat sederhana dan hampir seluruh tim mencoba menyelesaikannya, hanya sedikit tim yang berhasil memperoleh jawaban yang benar. Tantangan utama pada problem ini adalah mengolah data yang terus bertambah dan menentukan nilai median dari kumpulan data tersebut secara tepat.
 
 Untuk menyelesaikan permasalahan tersebut, program menerima sejumlah bilangan yang dimasukkan secara bertahap. Setiap kali pengguna memasukkan nilai 0, program akan mengurutkan data yang telah terkumpul menggunakan metode Insertion Sort, kemudian menentukan nilai median dari data tersebut. Proses berlanjut hingga pengguna memasukkan nilai khusus sebagai penanda akhir masukan.
